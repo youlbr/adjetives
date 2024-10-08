@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: 'Press Start 2P', sans-serif;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color:#92969a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: clamp(360px,100%,500px);
+    height: clamp(600px,100%,50%);
+    background-color:#566573 ;
+    display: flex;
+    flex-direction:column ;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;    
+}
+
+.content-text{
+    font-size: clamp(0.4rem,0.4rem + 3.5vw,0.4rem + 8vw);
+    letter-spacing: 4px;
+    color:#ec7063;
+    text-align: center;
+}
+.traslate{
+    font-size: clamp(0.4rem,0.4rem + 3vw,0.4rem + 6vw);
+    letter-spacing: 3px;
+    color:#d0d3d4 ;
+    text-align: center;
+    visibility:hidden;
+}
+
+.content img{
+    width: clamp(30px,15%,50px);
+    
+}
+.content button{
+    width: clamp(150px,25%,200px);
+    height: clamp(20px,7%,50px);
+    color: white;
+    background: transparent;
+    border:1px solid red;
+    font-size:150%;
+    letter-spacing: 3px;
+    font-family: 'Press Start 2P', sans-serif;
+
+    
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .content img:hover{
+        width: clamp(32px,16%,52px);
+        filter: grayscale(100%) sepia(100%) hue-rotate(90deg) saturate(500%);
+    
+    }
+    .content button:hover{
+        color: white;
+        background: transparent;
+        border:1px solid white;
+       
+        
+    }
+ 
+  }
