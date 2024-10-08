@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     return response.json(); // Convertir la respuesta a JSON (si es un recurso JSON)
   })
   .then(data => {
-      let count=120
+      let count=0
       console.log(data.length)
     let update=()=>{
         english.textContent=data[count].english
